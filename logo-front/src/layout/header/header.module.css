@@ -1,0 +1,14 @@
+.head {
+    background: #CDCFD6;
+    height: clamp(86px, 146px, 186px);
+    width: 100vw;
+}
+
+header .logo {
+    font-weight: 450;
+    font-family: Futura PT, serif;
+    size: 36px;
+    align-self: center;
+    top: 25px;
+    left: 106px;
+}

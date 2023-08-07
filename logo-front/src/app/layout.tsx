@@ -1,11 +1,25 @@
+import {FC, ReactNode} from 'react';
 import './globals.css'
 import Header from "@/layout/header/Header";
+import React from 'react';
+import StyledComponentsRegistry from '../lib/AntdRegistry';
+import './globals.css';
 
-const RootLayout = ({children}) => {
-  return (<div>
-      <Header/>
-      <body>{children}</body>
-      </div>)
+interface LayoutProps {
+    children : ReactNode
 }
 
-export default  RootLayout;
+const RootLayout : FC < LayoutProps > = ({children}) => {
+    return (
+        <html lang="en">
+            <body>
+                <StyledComponentsRegistry>
+                    <Header/>
+                    <body>{children}</body>
+                </StyledComponentsRegistry>
+            </body>
+        </html>
+    )
+}
+
+export default RootLayout;

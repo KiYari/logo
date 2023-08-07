@@ -1,14 +1,153 @@
 .head {
     background: #CDCFD6;
-    height: clamp(86px, 146px, 186px);
+    height: 146px;
     width: 100vw;
 }
 
 header .logo {
+    margin-top: 20px;
     font-weight: 450;
     font-family: Futura PT, serif;
-    size: 36px;
+    font-size: 36px;
+}
+
+header .headerButtonIcon {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+header .headerButtonCase:hover {
+    background-color: #6e6f7050;
+    border-radius: 25px;
+    transition: 0.35s;
+}
+
+header .headerButtonCase {
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 25px;
+    transition: 0.35s;
+}
+
+header .mainContentHolder {
+    position: relative;
+    display: flex;
+    gap: 80px;
+    width: clamp(25%, 88%, 90%);
     align-self: center;
     top: 25px;
     left: 106px;
+}
+
+header .input {
+    width: 750px;
+    background-color: #F7F7FC;
+}
+
+header .input:hover {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: inherit !important;
+}
+
+header .breadcrumbsCase {
+    margin-left: 15%;
+}
+
+header .breadcrumbsCase span {
+    margin-left: 40px;
+}
+
+header .breadcrumbsItem {
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 1700px) {
+    header .mainContentHolder {
+        gap: 150px;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    header .mainContentHolder {
+        gap: 10px;
+    }
+    
+    header .breadcrumbsCase {
+        margin-left: 5%;
+    }   
+
+    header .input {
+        width: clamp(350px, 686px, 700px);
+    }
+}
+
+@media only screen and (max-width: 1364px) {
+    header .breadcrumbsCase {
+        margin-left: 7%;
+    }  
+
+    header .breadcrumbsCase span {
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 1246px) {
+    header .mainContentHolder {
+        gap: 25px;
+    }
+
+    header .input {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1079px) {
+    header .breadcrumbsCase {
+        margin-left: 3%;
+    }  
+
+    header .breadcrumbsCase span {
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 987px) {
+    header .breadcrumbsCase {
+        display: none;
+    } 
+}
+
+@media only screen and (max-width: 930px) {
+    header .mainContentHolder {
+        gap: 25px;
+    }
+
+    header .input {
+        width: 350px;
+    }
+
+    header .mainContentHolder {
+        left: 106px;
+    }
+}
+
+@media only screen and (max-width: 777px) {
+    header .headerTextOnButtons{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 602px) {
+    header .headerTextOnButtons{
+        display: none;
+    }
+
+    header .mainContentHolder {
+        left: 0px;
+    }
+
+    header .mainContentHolder {
+        gap: 0px;
+    }
 }

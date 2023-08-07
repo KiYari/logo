@@ -1,9 +1,13 @@
-import Image from 'next/image'
+import React from 'react';
+import { Button, ConfigProvider } from 'antd';
+import theme from '../theme/themeConfig';
 
-const home = () => {
-  return(<main>
-        gaygays
-      </main>)
-}
+const HomePage = () => (
+  <ConfigProvider theme={theme}>
+    <div className="App">
+      <Button type="primary">Button</Button>
+    </div>
+  </ConfigProvider>
+);
 
-export default home;
+export default HomePage;

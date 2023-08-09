@@ -1,0 +1,27 @@
+.mainContent {
+    height: 500px;
+    position: absolute;
+}
+
+.carouselArrows {
+    position: absolute;
+    display: block;
+    font-size: 72px;
+    height: 100%;
+    transition: 0.35s;
+    top: 0;
+}
+
+
+.carouselArrows :hover {
+    transition: 0.35s;
+    background-color: rgb(119, 119, 119);
+}
+
+.carouselArrowLeft {
+    z-index: 1;
+}
+
+.carouselArrowRight {
+    margin-left: 95%;
+}

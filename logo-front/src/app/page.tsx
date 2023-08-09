@@ -1,12 +1,15 @@
 import React from 'react';
-import { Button, ConfigProvider } from 'antd';
+import { Button, Col, ConfigProvider, Row } from 'antd';
 import theme from '../theme/themeConfig';
+import LogoCarousel from '@/component/carousel/LogoCarousel';
 
 const HomePage = () => (
   <ConfigProvider theme={theme}>
-    <div className="App">
-      <Button type="primary">Button</Button>
-    </div>
+    <Row style={{'height': '500px'}}>
+      <Col span={20} offset={2}>
+        <LogoCarousel/>
+      </Col>
+    </Row>
   </ConfigProvider>
 );
 

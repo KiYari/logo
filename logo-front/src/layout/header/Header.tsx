@@ -1,9 +1,14 @@
 import {Breadcrumb, Button, Input, Space} from 'antd';
 import headerStyles from './header.module.css';
 import Link from 'next/link';
-import {UserOutlined, ShoppingCartOutlined, SearchOutlined} from '@ant-design/icons';
+import {UserOutlined, ShoppingCartOutlined, SearchOutlined, MenuOutlined} from '@ant-design/icons';
+import { FC } from 'react';
 
-const Header = () => {
+interface HeaderProps {
+
+}
+
+const Header:FC<HeaderProps> = () => {
     const headerLowbarItems = [
         {
             title: <a className={headerStyles.breadcrumbsItem} href='/'>Одежда</a>
@@ -33,6 +38,7 @@ const Header = () => {
                     <Input
                         placeholder="Одежда для мальчиков"
                         className={headerStyles.input}
+                        prefix={<Button icon={<MenuOutlined />}>Каталог</Button>}
                         suffix={< Button icon = { < SearchOutlined />
                     }
                     href = '/' />}/>

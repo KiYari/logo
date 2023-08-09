@@ -7,21 +7,37 @@
     position: absolute;
     display: block;
     font-size: 72px;
-    height: 100%;
+    height: 94%;
     transition: 0.35s;
     top: 0;
 }
 
 
-.carouselArrows :hover {
+.carouselArrows:hover {
     transition: 0.35s;
-    background-color: rgb(119, 119, 119);
+    background-color: rgb(163, 163, 163);
+}
+
+.carouselArrowLeft:hover {
+    transition: 0.35s;
+    background-color: rgb(163, 163, 163);
+    opacity: 0.5;
+    border-left: 25px;
+}
+
+.carouselArrowRight:hover {
+    transition: 0.35s;
+    background-color: rgb(163, 163, 163);
+    opacity: 0.5;
 }
 
 .carouselArrowLeft {
     z-index: 1;
+    height: 94%;
+    border-left: 25px;
 }
 
 .carouselArrowRight {
-    margin-left: 95%;
+    right: 0px;
+    height: 94%;
 }

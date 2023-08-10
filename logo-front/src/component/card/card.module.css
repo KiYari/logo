@@ -6,8 +6,43 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+    display: grid;
+    transition: 0.5s ease;
+    position: absolute;
+}
+
+.card:hover {
+    width: 105%;
+    height: 105%;
+    z-index: 100;
+    bottom: 5%;
+    transition: 0.5s ease;
+    display: grid;
+    position: absolute;
 }
 
 .title {
     text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: rgb(65, 73, 65);
+    visibility: hidden;
+}
+
+.toCartButton {
+    width: 100%;
+    background-color: #616575;
+    visibility: hidden;
+}
+
+.card:hover .price {
+    visibility: visible;
+}
+
+.card:hover .toCartButton {
+    visibility: visible;
 }

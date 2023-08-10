@@ -20,22 +20,26 @@ const LogoCarousel = () => {
             'title': 'title1',
             'description': 'i am description 1',
             'image': undefined,
-            'itemLink': ''
+            'itemLink': '',
+            'price': '500'
         }, {
             'title': 'title2',
             'description': 'i am description 2',
             'image': undefined,
-            'itemLink': ''
+            'itemLink': '',
+            'price': '500'
         }, {
             'title': 'title3',
             'description': 'i am description 3',
             'image': undefined,
-            'itemLink': ''
+            'itemLink': '',
+            'price': '500'
         }, {
             'title': 'title4',
             'description': 'i am description 4',
             'image': undefined,
-            'itemLink': ''
+            'itemLink': '',
+            'price': '500'
         }
     ];
 
@@ -62,7 +66,8 @@ const LogoCarousel = () => {
                         itemLink={item.itemLink}
                         title={item.title}
                         description={item.description}
-                        image={item.image}/>)
+                        image={item.image}
+                        price={item.price}/>)
                 })}
 
             </Carousel>

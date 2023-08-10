@@ -5,7 +5,7 @@ import Link from 'next/link';
 import GoodsProps from '@/component/card/goodsProps';
 
 
-const CarouselItem : FC < GoodsProps >= ({image, title, description, itemLink}) => {
+const CarouselItem : FC < GoodsProps >= ({image, title, description, itemLink, price}) => {
     return (
         <Card>
             {image == null || image == undefined || image == ""

@@ -1,3 +1,7 @@
 .cardRow {
-    margin-top: 2vw;
+    margin-top: 2vh;
+}
+
+.cardCol {
+    margin-top: 5vh;
 }

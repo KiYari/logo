@@ -1,0 +1,13 @@
+.cardImage {
+    object-fit: fill;
+}
+
+.card {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    text-decoration: underline;
+}

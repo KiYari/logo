@@ -1,24 +1,23 @@
 import {Card, Image, Typography} from 'antd';
 import {FC, ReactNode} from 'react';
-import itemStyles from './carouselItem.module.css';
+import itemStyles from './card.module.css';
 import Link from 'next/link';
 import GoodsProps from '@/component/card/goodsProps';
+import { inherits } from 'util';
 
-
-const CarouselItem : FC < GoodsProps >= ({image, title, description, itemLink}) => {
+const LogoCard : FC < GoodsProps > = ({image, title, description, itemLink}) => {
     return (
-        <Card>
+        <Card className={itemStyles.card} bodyStyle={{'height': 'inherit'}}>
             {image == null || image == undefined || image == ""
-                ? <Link
+                ? <Link style={{'height': '100%'}}
                         href={itemLink == '' || itemLink == null || itemLink == undefined
                         ? ''
                         : itemLink}>
 
                             <Image
+                            height='95%'
                             alt={description}
-                            className={itemStyles.carouselImage}
-                            width='60vw'
-                            height='45vh'
+                            className={itemStyles.cardImage}
                             preview={false}
                             src='https://epiphanychi.com/wp-content/uploads/2021/07/1200px-No_image_3x4.svg.png'/>
                     </Link>
@@ -35,6 +34,7 @@ const CarouselItem : FC < GoodsProps >= ({image, title, description, itemLink}) 
             <Typography className={itemStyles.title}>{title}</Typography>
         </Card>
     )
+
 }
 
-export default CarouselItem;
+export default LogoCard

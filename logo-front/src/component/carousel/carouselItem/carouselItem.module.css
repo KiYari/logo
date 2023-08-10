@@ -1,0 +1,11 @@
+.carouselImage {
+    margin-left: 10vw;
+    object-fit: fill;
+    position: absolute;
+}
+
+.title {
+    position: absolute;
+    margin-left: 40vw;
+    bottom: 5vh;
+}

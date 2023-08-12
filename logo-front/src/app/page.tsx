@@ -58,13 +58,6 @@ const HomePage = () => (
                 <LogoCarousel/>
             </Col>
         </Row>
-{/* 
-        {
-          cardItems.map((item, key) => {
-            console.log(key)
-            return(<div></div>)
-          })
-        } */}
 
         <Row gutter={[16, 0]} className={homeStyles.cardRow}>
             {cardItems.map((item, key) => key % 4 == 0

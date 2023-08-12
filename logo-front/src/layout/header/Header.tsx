@@ -1,3 +1,4 @@
+'use client'
 import {Breadcrumb, Button, Input, Space} from 'antd';
 import headerStyles from './header.module.css';
 import Link from 'next/link';
@@ -9,6 +10,7 @@ interface HeaderProps {
 }
 
 const Header:FC<HeaderProps> = () => {
+
     const headerLowbarItems = [
         {
             title: <a className={headerStyles.breadcrumbsItem} href='/'>Одежда</a>
@@ -32,16 +34,15 @@ const Header:FC<HeaderProps> = () => {
     return (
         <header className={headerStyles.head}>
             <div className={headerStyles.mainContentHolder}>
-                <p className={`${headerStyles.logo} ${headerStyles.headerTextOnButtons}`}>Logo</p>
+                <Link className={`${headerStyles.logo} ${headerStyles.headerTextOnButtons}`} href='/'>Logo</Link>
 
-                <Space>
+                <Space size={0}>
+                    
                     <Input
                         placeholder="Одежда для мальчиков"
                         className={headerStyles.input}
-                        prefix={<Button icon={<MenuOutlined />}>Каталог</Button>}
-                        suffix={< Button icon = { < SearchOutlined />
-                    }
-                    href = '/' />}/>
+                        prefix={<Button icon={<MenuOutlined />} className={headerStyles.catalogButton} href='/catalog'>Каталог</Button>}
+                        suffix={< SearchOutlined className={headerStyles.searchButton} onClick={() => console.log('gay')}/>}/>
                 </Space>
 
                 <Link href="/" className={headerStyles.headerButtonCase}>

@@ -1,0 +1,45 @@
+.mainContent {
+    height: 500px;
+    position: absolute;
+}
+
+
+.carouselArrows {
+    position: absolute;
+    display: block;
+    font-size: 72px;
+    height: 94%;
+    transition: 0.35s;
+    top: 0;
+    z-index: 4;
+}
+
+
+.carouselArrows:hover {
+    transition: 0.35s;
+    background-color: rgb(163, 163, 163);
+}
+
+.carouselArrowLeft:hover {
+    transition: 0.35s;
+    background-color: rgb(163, 163, 163);
+    opacity: 0.5;
+    border-left: 25px;
+}
+
+.carouselArrowRight:hover {
+    transition: 0.35s;
+    background-color: rgb(163, 163, 163);
+    opacity: 0.5;
+}
+
+.carouselArrowLeft {
+    z-index: 1;
+    height: 94%;
+    border-left: 25px;
+}
+
+.carouselArrowRight {
+    right: 16px;
+    height: 94%;
+}

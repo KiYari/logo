@@ -4,6 +4,7 @@ import Header from "@/layout/header/Header";
 import React from 'react';
 import StyledComponentsRegistry from '../lib/AntdRegistry';
 import './globals.css';
+import Footer from '@/layout/footer/Footer';
 
 interface LayoutProps {
     children : ReactNode
@@ -15,7 +16,8 @@ const RootLayout : FC < LayoutProps > = ({children}) => {
             <body>
                 <StyledComponentsRegistry>
                     <Header/>
-                    <body>{children}</body>
+                    <main>{children}</main>
+                    <Footer/>
                 </StyledComponentsRegistry>
             </body>
         </html>

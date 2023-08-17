@@ -10,7 +10,6 @@ interface HeaderProps {
 }
 
 const Header:FC<HeaderProps> = () => {
-
     const headerLowbarItems = [
         {
             title: <a className={headerStyles.breadcrumbsItem} href='/'>Одежда</a>
@@ -41,6 +40,7 @@ const Header:FC<HeaderProps> = () => {
                     <Input
                         placeholder="Одежда для мальчиков"
                         className={headerStyles.input}
+
                         prefix={<Button icon={<MenuOutlined />} className={headerStyles.catalogButton} href='/catalog'>Каталог</Button>}
                         suffix={< SearchOutlined className={headerStyles.searchButton} onClick={() => console.log('gay')}/>}/>
                 </Space>

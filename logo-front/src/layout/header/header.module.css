@@ -42,6 +42,7 @@ header .mainContentHolder {
 header .input {
     width: 750px;
     background-color: #F7F7FC;
+    padding: 0;
 }
 
 header .input:hover {
@@ -60,6 +61,30 @@ header .breadcrumbsCase span {
 
 header .breadcrumbsItem {
     font-size: 16px;
+}
+
+.catalogButton {
+    height: 42px !important;
+    border-right: 0px !important;
+    background-color: #616575 !important;
+    color: #F7F7FC !important;
+    font-size: 18px !important;
+}
+
+.searchButton {
+    height: 42px !important;
+    width: 42px !important;
+    margin-right: 0.5px;
+    font-size: 36px !important;
+    margin: 0 !important;
+    transition: 0.35s;
+}
+
+.searchButton :hover {
+    cursor: pointer;
+    width: 105%;
+    height: 105%;
+    transition: 0.35s;
 }
 
 @media only screen and (min-width: 1700px) {

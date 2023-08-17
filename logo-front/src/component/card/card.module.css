@@ -8,7 +8,6 @@
     justify-content: center;
     display: grid;
     transition: 0.5s ease;
-    position: absolute;
 }
 
 .card:hover {
